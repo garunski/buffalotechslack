@@ -31,7 +31,11 @@ var all = {
 
   // List of user roles
   userRoles: ['guest', 'user', 'admin'],
-
+  
+  slack_token: "",
+  
+  slack_team_name: "",
+  
   // MongoDB connection options
   mongo: {
     options: {

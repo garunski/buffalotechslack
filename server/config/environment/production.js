@@ -12,6 +12,12 @@ module.exports = {
   port:     process.env.OPENSHIFT_NODEJS_PORT ||
             process.env.PORT ||
             8080,
+            
+  slack_token:    process.env.OPENSHIFT_NODEJS_SLACK_TOKEN ||
+                  process.env.SLACK_TOKEN,
+
+  slack_team_name:   process.env.OPENSHIFT_NODEJS_SLACK_TEAM_NAME ||
+                     process.env.SLACK_TEAM_NAME,
 
   // MongoDB connection options
   mongo: {

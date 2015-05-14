@@ -359,9 +359,9 @@ module.exports = function (grunt) {
           ]
         }, {
           expand: true,
-          cwd: '.tmp/images',
+          cwd: 'client/assets/images',
           dest: '<%= yeoman.dist %>/public/assets/images',
-          src: ['generated/*']
+          src: ['*']
         }, {
           expand: true,
           dest: '<%= yeoman.dist %>',
@@ -420,7 +420,7 @@ module.exports = function (grunt) {
       },
       dist: [
         'sass',
-        'imagemin',
+        //'imagemin',
         'svgmin'
       ]
     },
